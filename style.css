@@ -175,3 +175,61 @@ footer {
     background: black;
     margin-top: 40px;
 }
+
+@media (max-width: 768px) {
+
+  /* Navbar */
+  .nav-links {
+    gap: 20px;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+  }
+
+  /* Hero */
+  .hero {
+    height: 70vh;
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* Navbar */
+  nav {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+  }
+
+  .nav-links a {
+    font-size: 15px;
+  }
+
+  /* Hero */
+  .hero {
+    height: auto;
+    padding: 30px 15px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+}
