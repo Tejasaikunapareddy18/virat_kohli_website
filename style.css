@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #0f0f0f;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: black;
+}
+
+.nav-links a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: "";
+    height: 2px;
+    width: 0;
+    background: crimson;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover::after,
+.nav-links .active::after {
+    width: 100%;
+}
+
+/* Hero */
+.hero {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(135deg, #000, #2b0000);
+    text-align: center;
+    background-image: url("Virat kohli.jpg");
+    background-size: cover;
+}
+
+.hero h1 {
+    font-size: 64px;
+    color: crimson;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+#intro {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: 400px;
+}
+
+.btn {
+    padding: 12px 30px;
+    border: 2px solid crimson;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: crimson;
+}
+
+/* Pages */
+.page {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.page h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: crimson;
+}
+
+/* Cards */
+.card {
+    background: #1a1a1a;
+    margin: 15px auto;
+    padding: 20px;
+    width: 60%;
+    border-left: 4px solid crimson;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Records */
+.stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    background: #1a1a1a;
+    padding: 30px;
+    width: 200px;
+    border: 1px solid crimson;
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.gallery-box1 {
+    height: 350px;
+    border: 2px dashed crimson;
+    background-image: url("image-1.jpg");
+    background-size: cover;
+}
+
+.gallery-box2 {
+    height: 350px;
+    border: 2px dashed crimson;
+    background-image: url("image-2.jpg");
+    background-size: cover;
+}
+
+.gallery-box3 {
+    height: 350px;
+    border: 2px dashed crimson;
+    background-image: url("image-3.jpg");
+    background-size: cover;
+}
+
+.gallery-box4 {
+    height: 350px;
+    border: 2px dashed crimson;
+    background-image: url("image-4.jpg");
+    background-size: cover;
+}
+
+.gallery-box5 {
+    height: 350px;
+    border: 2px dashed crimson;
+    background-image: url("image-5.jpg");
+    background-size: cover;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: black;
+    margin-top: 40px;
+}
