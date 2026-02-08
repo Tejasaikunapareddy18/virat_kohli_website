@@ -231,11 +231,6 @@ footer {
 
   .hero p {
     font-size: 14px;
-  }
-
-  .gallery {
-        display: flex;
-        flex-direction: column;
   }      
-
 }
+
