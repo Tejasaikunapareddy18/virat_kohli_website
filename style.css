@@ -161,13 +161,6 @@ body {
     background-size: cover;
 }
 
-.gallery-box5 {
-    height: 350px;
-    border: 2px dashed crimson;
-    background-image: url("image-5.jpg");
-    background-size: cover;
-}
-
 /* Footer */
 footer {
     text-align: center;
@@ -233,4 +226,5 @@ footer {
     font-size: 14px;
   }      
 }
+
 
